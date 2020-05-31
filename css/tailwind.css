@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  BOTONES  */
+.btn {
+    @apply text-base border-2 rounded-lg border-black text-white font-semibold py-2 px-8;
+}
+
+.btn--blue {
+    @apply bg-sdc-blue;
+}
+
+.btn--green {
+    @apply bg-sdc-green border-2;
+}
+
+.btn--orange {
+    @apply bg-sdc-orange border-2;
+}
+
+.btn--discord {
+    @apply bg-sdc-discord border-2;
+}
+
+.btn--black {
+    @apply bg-white text-black border-2;
+}
+
+
+/*  TIPOGRAFIA  */
+.title {
+    @apply text-5xl font-extrabold leading-none text-justify;
+}
+
+.title--sm {
+    @apply text-4xl font-extrabold leading-none text-justify;
+}
+
+.title__footer {
+    @apply text-2xl font-extrabold text-white leading-none text-justify;
+}
+
+
+.slider {
+    @apply border-2 border-black;
+}
+
+.slider__title {
+    @apply text-xl font-semibold leading-none text-justify; 
+}
+
+
+.card {
+    @apply bg-white border-2 border-black p-6;
+}
+
+.card__title {
+    @apply text-3xl font-extrabold leading-none text-justify;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 999;
+}
