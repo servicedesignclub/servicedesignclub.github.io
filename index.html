@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/public/favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <title>Service Design Club</title>
+  <link rel="stylesheet" href="build/tailwind.css">
+
+  <style>
+    #menu-toggle:checked + #menu {
+      display: block;
+    }
+</style>
+
+</head>
+<body>
+  
+  <header class="navbar lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center md:mt-4">
+      <a href="#">
+        <svg width="70" height="69" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0)"><path d="M1.023 1.528h67.89v46.738c0 10.74-8.706 19.446-19.445 19.446H1.023V1.528z" stroke="#000" stroke-width="2.047"/><path d="M65.922 50.845c1.183-1.402 2.193-3.267 2.991-5.628v3.05c0 10.739-8.706 19.445-19.446 19.445h-1.86c3.425-.892 5.816-2.071 7.369-3.57 1.797-1.736 2.375-3.803 2.27-6.01-.069-1.458-.436-2.997-.932-4.57 1.344.448 2.7.622 4.028.465 2.087-.247 3.993-1.301 5.58-3.182z" stroke="#000" stroke-width="2.047"/><path d="M13.954 12.991h1.985c-.06-2.185-1.992-3.771-4.764-3.771-2.738 0-4.837 1.566-4.837 3.918 0 1.899 1.359 3.011 3.551 3.604l1.613.44c1.459.387 2.585.866 2.585 2.08 0 1.332-1.273 2.211-3.025 2.211-1.586 0-2.905-.706-3.025-2.192H5.97c.133 2.472 2.046 3.998 5.104 3.998 3.205 0 5.051-1.686 5.051-3.998 0-2.459-2.192-3.411-3.925-3.838l-1.332-.346c-1.066-.274-2.486-.773-2.479-2.08C8.39 11.859 9.45 11 11.129 11c1.565 0 2.678.733 2.825 1.992zm7.57 10.268c2.232 0 3.811-1.1 4.264-2.765l-1.885-.34c-.36.966-1.226 1.46-2.359 1.46-1.706 0-2.852-1.107-2.905-3.08h7.276v-.706c0-3.698-2.212-5.143-4.53-5.143-2.853 0-4.732 2.172-4.732 5.317 0 3.178 1.853 5.257 4.871 5.257zm-2.879-6.217c.08-1.452 1.133-2.712 2.752-2.712 1.546 0 2.56 1.146 2.566 2.712h-5.318zm8.167 6.01h1.992v-6.25c0-1.339 1.033-2.305 2.446-2.305.413 0 .88.073 1.04.12V12.71a8.078 8.078 0 00-.847-.046c-1.2 0-2.225.68-2.599 1.779h-.106v-1.626h-1.926v10.234zm14.955-10.234h-2.139l-2.585 7.876h-.107l-2.592-7.876h-2.139l3.718 10.234h2.133l3.711-10.234zm.559 10.234h1.992V12.818h-1.992v10.234zm1.006-11.813c.686 0 1.26-.534 1.26-1.187 0-.652-.574-1.192-1.26-1.192-.693 0-1.26.54-1.26 1.193 0 .652.567 1.186 1.26 1.186zm6.664 12.02c2.419 0 3.985-1.453 4.205-3.445h-1.94c-.253 1.106-1.112 1.76-2.252 1.76-1.685 0-2.772-1.407-2.772-3.639 0-2.192 1.107-3.571 2.772-3.571 1.266 0 2.04.8 2.253 1.759H54.2c-.214-2.066-1.9-3.439-4.225-3.439-2.885 0-4.75 2.173-4.75 5.298 0 3.085 1.798 5.277 4.77 5.277zm9.433 0c2.232 0 3.811-1.1 4.264-2.765l-1.886-.34c-.36.966-1.226 1.46-2.358 1.46-1.706 0-2.852-1.107-2.905-3.08h7.276v-.706c0-3.698-2.212-5.143-4.531-5.143-2.852 0-4.731 2.172-4.731 5.317 0 3.178 1.852 5.257 4.87 5.257zm-2.879-6.217c.08-1.452 1.133-2.712 2.752-2.712 1.546 0 2.559 1.146 2.566 2.712H56.55zM10.93 41.052c4.157 0 6.563-2.578 6.563-6.843 0-4.244-2.406-6.803-6.423-6.803H6.51v13.647h4.418zm-2.36-1.799V29.205h2.373c2.985 0 4.524 1.786 4.524 5.004 0 3.232-1.539 5.044-4.65 5.044H8.57zm14.42 2.006c2.233 0 3.812-1.1 4.265-2.765l-1.885-.34c-.36.966-1.226 1.46-2.36 1.46-1.705 0-2.85-1.107-2.904-3.08h7.276v-.706c0-3.698-2.212-5.144-4.531-5.144-2.852 0-4.73 2.173-4.73 5.318 0 3.178 1.851 5.257 4.87 5.257zm-2.878-6.217c.08-1.452 1.133-2.712 2.752-2.712 1.546 0 2.559 1.146 2.566 2.712H20.11zm15.836-1.726c-.413-1.592-1.659-2.632-3.87-2.632-2.313 0-3.952 1.22-3.952 3.032 0 1.453.88 2.419 2.798 2.846l1.733.38c.986.22 1.446.659 1.446 1.299 0 .792-.846 1.412-2.152 1.412-1.193 0-1.96-.513-2.2-1.519l-1.925.293c.333 1.813 1.839 2.832 4.138 2.832 2.472 0 4.184-1.313 4.184-3.165 0-1.446-.92-2.339-2.798-2.772l-1.626-.373c-1.126-.267-1.613-.646-1.606-1.34-.007-.786.846-1.345 1.98-1.345 1.239 0 1.811.686 2.045 1.372l1.805-.32zm1.077 7.736h1.993V30.819h-1.993v10.235zm1.007-11.813c.686 0 1.259-.534 1.259-1.187 0-.652-.573-1.192-1.26-1.192-.692 0-1.259.54-1.259 1.192 0 .654.567 1.187 1.26 1.187zm6.644 15.845c2.605 0 4.617-1.193 4.617-3.805V30.818H47.34v1.659h-.147c-.353-.633-1.06-1.792-2.965-1.792-2.472 0-4.29 1.952-4.29 5.21 0 3.265 1.858 5.004 4.277 5.004 1.879 0 2.605-1.06 2.965-1.712h.127v2.012c0 1.58-1.1 2.279-2.612 2.279-1.66 0-2.306-.833-2.659-1.4l-1.712.707c.54 1.233 1.905 2.299 4.35 2.299zm-.02-5.837c-1.78 0-2.706-1.366-2.706-3.379 0-1.965.907-3.491 2.706-3.491 1.739 0 2.672 1.42 2.672 3.491 0 2.113-.953 3.379-2.672 3.379zm7.988-4.271c0-1.633 1-2.566 2.386-2.566 1.352 0 2.172.887 2.172 2.372v6.27h1.992v-6.51c0-2.532-1.393-3.858-3.485-3.858-1.54 0-2.545.713-3.018 1.8h-.127v-1.666h-1.912v10.235h1.992v-6.077zM17.845 49.844c-.466-2.919-2.752-4.624-5.637-4.624-3.532 0-6.137 2.645-6.137 7.01 0 4.364 2.592 7.01 6.137 7.01 2.998 0 5.19-1.88 5.637-4.579l-2.079-.006c-.353 1.745-1.819 2.705-3.545 2.705-2.338 0-4.104-1.792-4.104-5.13 0-3.312 1.759-5.131 4.111-5.131 1.74 0 3.198.98 3.538 2.745h2.08zm2.983-4.438h-1.993v13.647h1.993V45.406zm7.85 9.402c.006 1.74-1.286 2.565-2.405 2.565-1.233 0-2.086-.892-2.086-2.285v-6.27h-1.992v6.51c0 2.538 1.392 3.858 3.358 3.858 1.539 0 2.585-.813 3.058-1.906h.107v1.773h1.959V48.818h-2v5.99zm3.522 4.245h1.946V57.46h.166c.36.653 1.093 1.792 2.959 1.792 2.479 0 4.278-1.985 4.278-5.297 0-3.318-1.826-5.27-4.298-5.27-1.899 0-2.585 1.159-2.938 1.792h-.12v-5.07H32.2v13.646zm1.953-5.118c0-2.139.932-3.558 2.672-3.558 1.805 0 2.711 1.526 2.711 3.558 0 2.052-.932 3.618-2.712 3.618-1.712 0-2.671-1.466-2.671-3.618zm9.632 5.244c.726 0 1.333-.593 1.333-1.333a1.34 1.34 0 00-1.333-1.325c-.733 0-1.332.6-1.332 1.325 0 .74.6 1.333 1.332 1.333z" fill="#000"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 .504h69.937v68.231H0z"/></clipPath></defs></svg>
+    </a>
+  </div>
+
+   <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+  <input class="hidden" type="checkbox" id="menu-toggle" />
+
+  <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <nav>
+      <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+        <li><a class="lg:p-4 lg:px-4 py-3 px-0 block border-b-4 border-transparent font-semibold text-sdc-gray-light hover:text-black hover:font-semibold focus:font-semibold focus:text-sdc-blue hover:border-black" href="#uno">Service Design Club</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-4 border-transparent font-semibold text-sdc-gray-light hover:text-black hover:font-semibold focus:font-semibold focus:text-sdc-blue hover:border-black" href="#dos">Qué hacemos</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-4 border-transparent font-semibold text-sdc-gray-light hover:text-black hover:font-semibold focus:font-semibold focus:text-sdc-blue hover:border-black" href="#tres">Discord</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-4 border-transparent font-semibold text-sdc-gray-light hover:text-black hover:font-semibold focus:font-semibold focus:text-sdc-blue hover:border-black" href="#cuatro">LP Service Jam</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-4 border-transparent font-semibold text-sdc-gray-light hover:text-black hover:font-semibold focus:font-semibold focus:text-sdc-blue hover:border-black lg:mb-0 mb-2" href="#cinco">Sponsors</a></li> 
+      </ul>
+    </nav>
+    <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/eCZUDtH" class="btn btn--black block transition duration-150 ease-in-out lg:ml-4 flex items-center sm:justify-center lg:justify-start lg:mb-0 mb-4 pointer-cursor  hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-105 hover:text-white"> Sumarme </a>
+
+  </div>
+
+  </header>
+  <!-- Home -->
+  <div id="uno" class="flex flex-wrap mb-4 sm:flex-col-reverse md:flex-row">
+    <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 lg:p-12 sm:p-8">
+      <h1 class="title">Service <br> DesignClub</h1>
+      <p class="py-6 lg:max-w-lg xl:max-w-xl">Somos un equipo de manijas que buscamos generar una comunidad de
+        Diseño. Comenzamos organizando la Service Jam y meetups y ahora creamos un espacio online donde poder
+        estar conectados 24/7 con un montón de gente de todo el mundo.</p>
+        <button class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0">
+          <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/eCZUDtH">Sumate a la comunidad!</a>
+        </button>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/2">
+      <img src="img/1.jpg" alt="LpGovJam2020" />
+    </div>
+  </div>
+
+  <!-- Qué hacemos -->
+  <div id="dos" class="flex flex-wrap flex-1 xl:px-32 lg:px-12 sm:px-8">
+    <h2 class="title">Qué<br>hacemos</h2>
+  </div>
+  <div class="flex flex-wrap lg:justify-between sm:justify-center mb-4 xl:px-32 lg:px-12 sm:p-8"> 
+    <!-- Box 1 -->
+      <div class="slider max-w-2xl p-8 w-full lg:w-1/2 sm:mb-8 lg:mb-0">
+        <img src="/public/img/slider1.svg" alt="Wireframe" class="w-full block mb-4">
+        <h3 class="slider__title mb-2">Weekly UI</h3>
+        <p class="text-justify">
+          Todas las semanas, la comunidad realiza un desafio del #DailyUI. <br>
+          Los martes a las 19hs (ARG) algunos valientes se animan a hacerlo en vivo por nuestro canal de
+          Discord.
+        </p>
+        <button class="btn btn--green hover:bg-sdc-green transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-10">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/servicedesignclub">Encontralos acá</a>
+        </button>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="slider max-w-2xl p-8 w-full lg:w-1/2">
+        <img src="/public/img/slider2.svg" alt="Podcast" class="w-full block mb-4">
+        <h3 class="slider__title mb-2">Podcast</h3>
+        <p class="text-justify">
+          Entrevistas en vivo en nuestro Discord con diferentes referentes del diseño UX, UI, research y Service
+          Design.
+        </p>
+        <button class="btn btn--orange hover:bg-sdc-orange transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-16">
+          <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/1WlfeCvjGxPGGUdPCMUGe4">Escuchalos acá</a>
+        </button>
+      </div>
+  </div>
+
+
+    <!-- Comunidad -->
+  <div id="tres" class="bg-auto bg-no-repeat bg-repeat-x align-middle sm:py-32 lg:px-24 lg:py-64 min-h-screen" style="background-image: url(/public/img/bg-comunidad3.svg" )"> 
+    <div class="flex flex-wrap flex-1/2 lg:justify-end sm:justify-center xl:px-32 lg:px-12 sm:px-8">
+
+      <!-- Box 1 -->
+      <div class="slider bg-white max-w-2xl p-8 w-full lg:w-1/2 lg:mb-0 md:min-h-full sm:py-24 sm:px-12 md:px-12 lg:px-8 lg:py-8 xl:px-12 xl:py-40">
+        <h2 class="title text-sdc-discord">Hi, there!</h2>
+        <p class="text-justify py-6">
+          Este es nuestro espacio digital Aca estamos conectados 24/7 con gente de todo el mundo.
+          Nos permite ampliar la comunidad, salir del silo de diseño y de Argentina. </p>
+          <p>
+          En Discord hacemos challenges semanalas, entrevitas en vivo, coworkeamos y algunas cosas más.
+        </p>
+        <button class="btn btn--discord hover:bg-sdc-discord transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-8">
+          <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/eCZUDtH">Unite ahora</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <!-- LP Service Jam -->
+    <div id="cuatro" class="flex flex-wrap mb-4 mt-8 -ml-4">
+      <div class="w-full md:w-1/2 lg:w-1/2">
+        <img src="img/gallery-1.svg" alt="LpGovJam2020" />
+      </div>
+
+      <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 lg:p-12 sm:p-8">
+        <h2 class="title">La  Global<br>Service Jam</h2>
+        <p class="py-6 lg:max-w-lg xl:max-w-xl">Desde Service Design Club, organizamos el capítulo de La Plata, (Argentina) de la Global Service Jam. Un evento que se realiza 2 veces al año, y en una jornada de 3 dias reúne alrededor de 50 profesionales de distintas áreas quienes atravesarán el proceso de diseñar un servicio para acabar con un prototipo funcional.</p>
+          <button class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0">
+            <a target="_blank" rel="noopener noreferrer" href="#">Mirá la última edición</a>
+          </button>
+      </div>
+    </div>
+
+    <!-- Sponsors -->
+    <div id="cinco" class="flex flex-wrap mb-4 sm:flex-col-reverse md:flex-row">
+      <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 lg:p-12 sm:p-8">
+        <h2 class="title sm:text-4xl">¿Querés <br> sponsorearnos?</h2>
+        <p class="py-6 lg:max-w-lg xl:max-w-xl">Creemos que el acceso al conocimiento es algo que debería estar abierto
+        para todos y no verse limitado por factores económicos. Es por esto que Service Design Club y todos nuestros
+        eventos son gratuito. Cualquier persona que lo desee puede sumarse.</p>
+        <p class="font-bold">Podes ayudarnos a seguir generando contenido y así alcanzar a más gente nuestro trabajo.</p>
+        <button class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0 mt-4">
+          <a target="_blank" rel="noopener noreferrer" href="#">Escribinos</a>
+        </button>
+        <p class="mt-6 lg:max-w-lg xl:max-w-xl">Nuestro mail es</p>
+        <p class="font-bold">servicedesignclubgmail.com</p>   
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/2">
+        <img src="/public/img/2.svg" alt="Service design club girl" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black p-12">
+      <div class="flex flex-row flex-1/8  justify-start">
+        <img src="/public/img/sdc-logo.svg" alt="Service design club logo" class="-mt-24" />
+      </div>   
+
+      <div class="flex flex-row flex-1 justify-center">
+        <h4 class="title__footer">Seguinos en</h4>
+      </div>
+
+      <div class="flex flex-row flex-1 justify-center align-middle mx-auto space-x-8 mt-12 align-middle">          
+          <a href="https://www.instagram.com/servicedesignclub/" target="_blank" rel="noopener noreferrer"><img src="/public/img/ig-ico.svg" alt="instragram"/></a>
+          <a href="https://www.facebook.com/servicedesignclub" target="_blank" rel="noopener noreferrer"><img src="/public/img/fb-ico.svg" alt="facebook"/></a>
+          <a href="https://twitter.com/servicedsgnclub" target="_blank" rel="noopener noreferrer"><img src="/public/img/tw-ico.svg" alt="twitter"/></a>
+          <a href="https://www.behance.net/servicedesignclub" target="_blank" rel="noopener noreferrer"><img src="/public/img/bh-ico.svg" alt="behance"/></a>
+          <a href="https://open.spotify.com/show/1WlfeCvjGxPGGUdPCMUGe4" target="_blank" rel="noopener noreferrer"><img src="/public/img/sp-ico.svg" alt="spotify"/></a>
+          <a href="https://www.youtube.com/channel/UCJYuDBAnElNvqmzQqUUKU4g" target="_blank" rel="noopener noreferrer"><img src="/public/img/yt-ico.svg" alt="youtube"/></a>                                          
+      </div>      
+    </footer>
+
+</body>
+  
+</html>
