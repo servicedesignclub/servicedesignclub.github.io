@@ -47,7 +47,7 @@
 }
 
 .slider__title {
-    @apply text-xl font-semibold leading-none text-justify; 
+    @apply text-4xl font-semibold leading-none text-justify; 
 }
 
 
