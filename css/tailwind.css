@@ -56,7 +56,7 @@
 }
 
 .card__title {
-    @apply text-3xl font-extrabold leading-none text-justify;
+    @apply text-3xl font-extrabold leading-none;
 }
 
 .navbar {
