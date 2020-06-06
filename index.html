@@ -131,7 +131,7 @@
         <p class="py-6 lg:max-w-lg xl:max-w-xl">Creemos que el acceso al conocimiento es algo que debería estar abierto para todos y no verse limitado por factores económicos. Es por esto que Service Design Club y todos nuestros eventos son gratuito. Cualquier persona que lo desee puede sumarse.</p>
         <p class="font-bold">Podes ayudarnos a seguir generando contenido y así alcanzar a más gente nuestro trabajo.</p>
         <div class="tooltip">
-          <button onclick="copyToClipboard('#p1')" class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0 mt-4"> <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> Escribinos </button>
+          <button onclick="copyToClipboard('#p1')" onmouseout="outFunc()" class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0 mt-4"> <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> Escribinos </button>
         </div>
         <p class="mt-6 lg:max-w-lg xl:max-w-xl">Nuestro mail es</p>
         <p id="p1" class="font-bold">servicedesignclub@gmail.com</p>
@@ -172,8 +172,12 @@
         var tooltip = document.getElementById("myTooltip");
         tooltip.innerHTML = "Email copiado!";
       }
-    </script>
 
+      function outFunc() {
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Copy to clipboard";
+      }
+    </script>
 </body>
   
 </html>
