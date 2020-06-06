@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/public/favicon.ico" rel="icon" type="image/x-icon" />
-  <link rel="shortcut icon" type="image/png" href="public/img/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
   <title>Service Design Club</title>
-  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="/public/build/tailwind.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
   <style>
     #menu-toggle:checked + #menu {
@@ -15,7 +17,7 @@
 </style>
 
 </head>
-<body>
+<body privacy.resistFingerprinting="true">
   
   <header class="navbar lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
     <div class="flex-1 flex justify-between items-center md:mt-4">
@@ -43,12 +45,10 @@
 
   </header>
   <!-- Home -->
-  <div id="uno" class="flex flex-wrap mb-4 sm:flex-col-reverse md:flex-row">
-    <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 lg:p-12 sm:p-8">
-      <h1 class="title">Service <br> Design Club</h1>
-      <p class="py-6 lg:max-w-lg xl:max-w-xl">Somos un equipo de manijas que buscamos generar una comunidad de
-        Diseño. Comenzamos organizando la Service Jam y meetups y ahora creamos un espacio online donde podemos
-        estar conectados 24/7 con un montón de gente de todo el mundo.</p>
+  <div id="uno" class="flex flex-wrap mb-4 sm:flex-col-reverse md:flex-row md:py-32 lg:py-0">
+    <div class="w-full md:w-1/2 lg:w-1/2 sm:p-8 lg:p-12 lg:py-32 xl:p-16 xl:py-40">
+      <h1 class="title sm:text-4xl">Service <br> DesignClub</h1>
+      <p class="py-6 lg:max-w-lg xl:max-w-xl">Somos un equipo de manijas que buscamos generar una comunidad de Diseño. Comenzamos organizando la Service Jam y meetups y ahora creamos un espacio online donde podemos estar conectados 24/7 con un montón de gente de todo el mundo.</p>
         <button class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0">
           <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/eCZUDtH">Sumate a la comunidad!</a>
         </button>
@@ -59,53 +59,48 @@
   </div>
 
   <!-- Qué hacemos -->
-  <div id="dos" class="pb-32"></div>
-  <div class="flex flex-wrap flex-1 xl:px-32 lg:px-12 sm:px-8">
-    <h2 class="title">Qué<br>hacemos</h2>
+  <div id="dos" class="sm:pb-12 pb-32"></div>
+  <div class="flex flex-wrap flex-1 sm:px-8 lg:px-12 xl:px-16">
+    <h2 class="title sm:text-4xl">Qué<br>hacemos</h2>
   </div>
-  <div class="flex flex-wrap lg:justify-between sm:justify-center mb-4 xl:px-32 lg:px-12 sm:p-8"> 
-    <!-- Box 1 -->
-      <div class="slider max-w-2xl p-8 w-full lg:w-1/2 sm:mb-8 lg:mb-0">
-        <img src="/public/img/slider1.svg" alt="Wireframe" class="w-full block mb-4">
-        <h3 class="slider__title mb-2">Weekly UI challenges</h3>
-        <p class="text-justify">
-          Todas las semanas, la comunidad realiza un desafio del #DailyUI. <br>
-          Los martes a las 19hs (ARG) algunos valientes se animan a hacerlo en vivo por nuestro canal de
-          Discord.
-        </p>
-        <button class="btn btn--green hover:bg-sdc-green transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-10">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/servicedesignclub">Encontralos acá</a> 
-        </button>
-      </div>
+  <div class="sm:p-8 md:p-8 lg:px-12 xl:px-16">
+    <div class="flex flex-wrap lg:justify-between sm:justify-center mb-4 m-auto"> 
+      <!-- Box 1 -->
+        <div class="slider sm:max-w-full lg:max-w-xl xl:max-w-1xl p-8 w-full lg:w-1/2 sm:mb-8 lg:mb-0">
+          <img src="/public/img/slider1.svg" alt="Wireframe" class="w-full block mb-4">
+          <h3 class="slider__title mb-2">Weekly UI challenges</h3>
+          <p>
+            Todas las semanas, la comunidad realiza un desafio del #DailyUI.
+            Los martes a las 19hs (ARG) algunos valientes se animan a hacerlo en vivo por nuestro canal de Discord.
+          </p>
+          <button class="btn btn--green hover:bg-sdc-green transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-10">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/servicedesignclub">Encontralos acá</a>
+          </button>
+        </div>
 
-      <!-- Box 2 -->
-      <div class="slider max-w-2xl p-8 w-full lg:w-1/2">
-        <img src="/public/img/slider2.svg" alt="Podcast" class="w-full block mb-4">
-        <h3 class="slider__title mb-2">Live Design Radio</h3>
-        <p class="text-justify">
-          Entrevistas en vivo en nuestro Discord con diferentes referentes del diseño UX, UI, research y Service
-          Design.
-        </p>
-        <button class="btn btn--orange hover:bg-sdc-orange transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-16">
-          <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/1WlfeCvjGxPGGUdPCMUGe4">Escuchalos acá</a>
-        </button>
-      </div>
+        <!-- Box 2 -->
+        <div class="slider sm:max-w-full lg:max-w-xl xl:max-w-1xl p-8 w-full lg:w-1/2">
+          <img src="/public/img/slider2.svg" alt="Podcast" class="w-full block mb-4">
+          <h3 class="slider__title mb-2">Live Design Radio</h3>
+          <p>
+            Entrevistas en vivo en nuestro Discord con diferentes referentes del diseño UX, UI, research y Service Design.
+          </p>
+          <button class="btn btn--orange hover:bg-sdc-orange transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-16">
+            <a target="_blank" rel="noopener noreferrer" href="https://open.spotify.com/show/1WlfeCvjGxPGGUdPCMUGe4">Escuchalos acá</a>
+          </button>
+        </div>
+    </div>
   </div>
 
 
     <!-- Comunidad -->
-  <div id="tres" class="bg-auto bg-no-repeat bg-repeat-x align-middle sm:py-32 lg:px-24 lg:py-64 min-h-screen" style="background-image: url(/public/img/bg-comunidad3.svg" )"> 
-    <div class="flex flex-wrap flex-1/2 lg:justify-end sm:justify-center xl:px-32 lg:px-12 sm:px-8">
-
+  <div id="tres" class="bg-auto bg-no-repeat bg-repeat-x align-middle sm:py-32 lg:px-24 lg:py-8 min-h-screen mb-16" style="background-image: url(/public/img/bg-comunidad4.svg" )"> 
+    <div class="flex flex-wrap flex-1/2 lg:justify-end sm:justify-center sm:px-8 lg:px-12 xl:px-32 sm:py-2 lg:py-32 xl:py-48">
       <!-- Box 1 -->
-      <div class="slider bg-white max-w-2xl p-8 w-full lg:w-1/2 lg:mb-0 md:min-h-full sm:py-12 sm:px-8 md:px-12 lg:px-8 lg:py-8 xl:px-12 xl:py-40">
-        <h2 class="title text-sdc-discord">Hi, there!</h2>
-        <p class="text-justify py-6">
-          Este es nuestro espacio digital. Acá estamos conectados 24/7 con gente de todo el mundo.
-          Nos permite ampliar la comunidad, salir del silo de diseño y de Argentina. </p>
-          <p>
-          En Discord hacemos challenges semanales, entrevitas en vivo, coworkeamos y algunas cosas más.
-        </p>
+      <div class="slider bg-white max-w-2xl p-8 w-full lg:w-1/2 lg:mb-0 md:min-h-full sm:py-12 sm:px-8 md:px-12 lg:px-8 lg:py-8 xl:px-12 xl:py-20">
+        <h2 class="title text-sdc-discord sm:text-4xl">Hi, there!</h2>
+        <p class="py-6">Este es nuestro espacio digital. Acá estamos conectados 24/7 con gente de todo el mundo. Nos permite ampliar la comunidad, salir del silo de diseño y de Argentina.</p>
+          <p>En Discord hacemos challenges semanales, entrevitas en vivo, coworkeamos y algunas cosas más.</p>
         <button class="btn btn--discord hover:bg-sdc-discord transform hover:-translate-y-1 hover:scale-110 mt-4 lg:mt-8">
           <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/eCZUDtH">Unite ahora</a>
         </button>
@@ -113,36 +108,35 @@
     </div>
   </div>
 
-    <!-- LP Service Jam -->
+    <!-- LP Service Jam -->   
     <div id="cuatro" class="flex flex-wrap mb-4 mt-8 -ml-4">
       <div class="w-full md:w-1/2 lg:w-1/2">
-        <img src="public/img/gallery-1.svg" alt="LpGovJam2020" />
+        <img src="/public/img/gallery-1.svg" alt="LpGovJam2020" />
       </div>
 
-      <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 lg:p-12 sm:p-12">
-        <h2 class="title">La  Global<br>Service Jam</h2>
+      <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 p-12 lg:px-12 xl:px-16 mb-16">
+        <h2 class="title sm:text-4xl">La  Global<br>Service Jam</h2>
         <p class="py-6 lg:max-w-lg xl:max-w-xl">Desde Service Design Club, organizamos el capítulo de La Plata, (Argentina) de la Global Service Jam. Un evento que se realiza 2 veces al año, y en una jornada de 3 dias reúne alrededor de 50 profesionales de distintas áreas quienes atravesarán el proceso de diseñar un servicio para acabar con un prototipo funcional.</p>
           <button class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0">
-            <a target="_blank" rel="noopener noreferrer" href="#">Mirá la última edición</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=aO5QFnPhXpE">Mirá la última edición</a>
           </button>
       </div>
     </div>
-
+    
     <!-- Sponsors -->
-    <div id="cinco" class="flex flex-wrap mb-4 sm:flex-col-reverse md:flex-row">
-      <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 lg:p-12 sm:p-8">
+    <div id="cinco" class="flex flex-wrap mb-4 sm:flex-col-reverse md:flex-row mb-16">
+      
+      <div class="w-full md:w-1/2 lg:w-1/2 xl:p-32 p-8 lg:px-12 xl:px-16">
         <h2 class="title sm:text-4xl">¿Querés <br> sponsorearnos?</h2>
-        <p class="py-6 lg:max-w-lg xl:max-w-xl">Creemos que el acceso al conocimiento es algo que debería estar abierto
-        para todos y no verse limitado por factores económicos. Es por esto que Service Design Club y todos nuestros
-        eventos son gratuito. Cualquier persona que lo desee puede sumarse.</p>
+        <p class="py-6 lg:max-w-lg xl:max-w-xl">Creemos que el acceso al conocimiento es algo que debería estar abierto para todos y no verse limitado por factores económicos. Es por esto que Service Design Club y todos nuestros eventos son gratuito. Cualquier persona que lo desee puede sumarse.</p>
         <p class="font-bold">Podes ayudarnos a seguir generando contenido y así alcanzar a más gente nuestro trabajo.</p>
-        <button class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0 mt-4">
-          <a target="_blank" rel="noopener noreferrer" href="#">Escribinos</a>
-        </button>
+        <div class="tooltip">
+          <button onclick="copyToClipboard('#p1')" class="btn btn--blue hover:bg-sdc-blue transform hover:-translate-y-1 hover:scale-110 sm:min-w-full md:min-w-0 mt-4"> <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> Escribinos </button>
+        </div>
         <p class="mt-6 lg:max-w-lg xl:max-w-xl">Nuestro mail es</p>
-        <p class="font-bold"> <span>servicedesignclub@gmail.com</span></p>   
+        <p id="p1" class="font-bold">servicedesignclub@gmail.com</p>
       </div>
-      <div class="w-full md:w-1/2 lg:w-1/2">
+      <div class="w-full md:w-1/2 md:justify-end"> 
         <img src="/public/img/2.svg" alt="Service design club girl" />
       </div>
     </div>
@@ -167,20 +161,20 @@
       </div>      
     </footer>
 
-    <script> 
-      const span = document.querySelector("span");
-      span.onclick = function() {
+    <script>
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
         document.execCommand("copy");
+        $temp.remove();
+
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Email copiado!";
       }
-      span.addEventListener("copy", function(event) {
-        event.preventDefault();
-        if (event.clipboardData) {
-          event.clipboardData.setData("text/plain", span.textContent);
-          console.log(event.clipboardData.getData("text"))
-        }
-      });
-      </script>    
+    </script>
 
 </body>
   
 </html>
+
