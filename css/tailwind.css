@@ -5,6 +5,7 @@
 /*  BOTONES  */
 .btn {
     @apply text-base border-2 rounded-lg border-black text-white font-semibold py-2 px-8;
+
 }
 
 .btn--blue {
@@ -30,15 +31,19 @@
 
 /*  TIPOGRAFIA  */
 .title {
-    @apply text-5xl font-extrabold leading-none text-justify;
+    @apply text-base font-extrabold leading-none;
+}
+
+.title--main{
+    max-width: 35%;
 }
 
 .title--sm {
-    @apply text-4xl font-extrabold leading-none text-justify;
+    @apply text-4xl font-extrabold leading-none;
 }
 
 .title__footer {
-    @apply text-2xl font-extrabold text-white leading-none text-justify;
+    @apply text-2xl font-extrabold text-white leading-none;
 }
 
 
@@ -58,6 +63,7 @@
 .card__title {
     @apply text-3xl font-extrabold leading-none;
 }
+
 
 .navbar {
     overflow: hidden;

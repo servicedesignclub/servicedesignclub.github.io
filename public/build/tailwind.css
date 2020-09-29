@@ -19825,17 +19825,19 @@ video {
 /*  TIPOGRAFIA  */
 
 .title {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: 800;
   line-height: 1;
-  text-align: justify;
+}
+
+.title--main{
+  max-width: 35%;
 }
 
 .title--sm {
   font-size: 2.25rem;
   font-weight: 800;
   line-height: 1;
-  text-align: justify;
 }
 
 .title__footer {
@@ -19845,7 +19847,6 @@ video {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   line-height: 1;
-  text-align: justify;
 }
 
 .slider {
@@ -19859,7 +19860,6 @@ video {
   font-size: 2.25rem;
   font-weight: 600;
   line-height: 1;
-  text-align: justify;
 }
 
 .card {
@@ -19877,7 +19877,6 @@ video {
   font-size: 1.875rem;
   font-weight: 800;
   line-height: 1;
-  text-align: justify;
 }
 
 .navbar {
