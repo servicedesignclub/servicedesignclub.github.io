@@ -234,7 +234,6 @@ section, nav{
 .txt--hero{
     /* width: 27%; */
     margin: 40px 0;
-    font-weight: 500;
     font-size: 18px;
     line-height: 167%;
 }
@@ -751,6 +750,7 @@ img.manija-img.manija-img--10 {
     font-weight: 800;
     font-size: 60px;
     line-height: 70px;
+    color: white;
 }
 
 .sponsors__container{
@@ -1080,7 +1080,6 @@ img.manija-img.manija-img--10 {
         flex-direction: column;
         width: 100%;
         margin-top: 120px;
-        height: 100vh;
     }
 
     .hero__container{
@@ -1157,6 +1156,7 @@ img.manija-img.manija-img--10 {
 
     .txt--que-hacemos{
         font-size: 20px;
+        margin-bottom: 0;
     }
 
     .que-hacemos__container{
@@ -1283,8 +1283,8 @@ img.manija-img.manija-img--10 {
 
     .team {
         margin-top: 200px;
-        padding: 80px 32px;
-        height: 1100px;
+        padding: 80px 32px 0 32px;
+        height: 1000px;
     }
 
     .team__title{
@@ -1350,6 +1350,7 @@ img.manija-img.manija-img--10 {
 
     .sponsoreanos{
         flex-direction: column;
+        padding: 80px 32px 0 32px;
     }
 
     .sponsoreanos__title{
