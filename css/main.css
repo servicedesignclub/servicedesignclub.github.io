@@ -737,7 +737,7 @@ img.manija-img.manija-img--10 {
 
 /* SPONSORS */
 
-.sponsors{
+.acompanan{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -746,14 +746,14 @@ img.manija-img.manija-img--10 {
     background-color: #5552FF;
 }
 
-.sponsors__title{
+.acompanan__title{
     font-weight: 800;
     font-size: 60px;
     line-height: 70px;
     color: white;
 }
 
-.sponsors__container{
+.acompanan__container{
     display: grid;
     margin-top: 150px;
     width: 100%;
@@ -767,7 +767,7 @@ img.manija-img.manija-img--10 {
     grid-column-start: 2;
 }
 
-.sponsors__empresa{
+.acompanan__empresa{
     max-width: 200px;
     align-self: center;
     justify-self: center;
@@ -867,15 +867,15 @@ img.manija-img.manija-img--10 {
         width: 80%;
     }
 
-    .sponsors__empresa{
+    .acompanan__empresa{
         width: 100%;
     }
 
-    .sponsors{
+    .acompanan{
         padding: 150px 60px;
     }
 
-    .sponsors__container{
+    .acompanan__container{
         column-gap: 20px;
     }
 
@@ -1381,20 +1381,20 @@ img.manija-img.manija-img--10 {
         margin-bottom: 40px;
     }
 
-    /* SPONSORS */
+    /* acompanan */
 
-    .sponsors{
+    .acompanan{
         padding: 80px 32px;
     }
 
-    .sponsors__title{
+    .acompanan__title{
         font-size: 34px;
         line-height: 48px;
         margin-bottom: 40px;
         text-align: center;
     }
 
-    .sponsors__container{
+    .acompanan__container{
         margin-top: 40px;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
@@ -1405,7 +1405,7 @@ img.manija-img.manija-img--10 {
         grid-column-start: 1;
     }
 
-    .sponsors__empresa {
+    .acompanan__empresa {
         width: 80%;
     }
 
